@@ -1,3 +1,5 @@
+source "https://rubygems.org"
+gem "rspec"
 
 Gem::Specification.new do |s|
 	s.name        = 'nautilus_scripts'
