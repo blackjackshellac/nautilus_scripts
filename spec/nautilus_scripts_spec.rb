@@ -1,6 +1,17 @@
 require 'nautilus_scripts'
 
 describe Nautilus::Scripts do
+	describe ".defile" do
+		context "return path without file uri and spaces" do
+			before do
+				@@files=%W(file:///abc\ foo file:///def\ bar)
+			end
+			it "defiles a file uri" do
+				expect(Nautilus::Scripts.defile(@@files[0])).to eq("/abc foo")
+			end
+		end
+	end
+
 	describe ".selected_uris" do
 		context "given no argument" do
 			it "returns empty array" do

@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
 	s.name        = 'nautilus_scripts'
-	s.version     = '0.0.4'
-	s.date        = '2016-12-05'
+	s.version     = '0.0.5'
+	s.date        = '2016-12-07'
 	s.summary     = "gnome nautilus scripts"
 	s.description = "manipulate files selected in the filemanager in the scripts directory (~/.local/share/nautilus/scripts)"
 	s.authors     = ["Steeve McCauley"]
